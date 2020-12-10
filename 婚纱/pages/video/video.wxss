@@ -1,0 +1,58 @@
+/* .content_video{
+   width: 100%;
+   display: flex;
+   flex-wrap: wrap;
+}
+video{
+    width: 100%;
+}
+.sendMessage{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.sendMessage>input{
+       width: 100%;
+       margin-top: 15rpx;
+       border: 1px solid gray;
+}
+.sendMessage>button{
+      margin-top: 15rpx;
+} */
+
+/* 视频展示 */
+.video_container{
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+}
+.video_container .title{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      margin:25rpx;
+      justify-content: flex-start;
+}
+.video_container .title text{
+         margin-top: 25rpx;
+         color: grey;
+         font-size: 40rpx;
+}
+.video_container .title text:first-child{
+        font-weight: 600;
+        font-size: 45rpx;
+        color: black;
+}
+.video_container .video{
+            width: 100%;
+            height: 350rpx;
+            margin: 25rpx;
+}
+.video_container .video>video{
+             width: 100%;
+             height: 100%;
+}
+
+

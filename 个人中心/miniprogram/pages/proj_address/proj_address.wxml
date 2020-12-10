@@ -1,0 +1,36 @@
+<view class="container">
+       <view class="infoContiner">
+           <text>收货人姓名</text>
+           <view>{{useInfo.name}}</view>
+       </view>
+        <view class="infoContiner">
+           <text>邮编</text>
+           <view>{{useInfo.code}}</view>
+       </view>
+       <view class="infoContiner">
+           <text>地区</text>
+           <view>{{useInfo.area}}</view>
+       </view>
+       <view class="infoContiner">
+           <text>收货地址</text>
+           <view>{{useInfo.address}}</view>
+       </view>
+       <view class="infoContiner">
+           <text>国家码</text>
+           <view>{{useInfo.countrycode}}</view>
+       </view>
+       <view class="infoContiner">
+           <text>手机号</text>
+           <view>{{useInfo.phone}}</view>
+       </view>
+
+      <view class="add" bindtap="goAdd">  
+          <view class="left">
+            <image src="../../images/add.png"></image>
+            <text>获取收货地址</text>
+          </view>
+            <image src="../../images/arrow.png"></image>
+      </view> 
+
+
+</view>

@@ -1,0 +1,29 @@
+<image src="../../static/blue.jpg" mode="aspectFill"></image>
+<view class="container">
+     <swiper>
+         <swiper-item>
+             <include src="../allviews/one.wxml"/>
+         </swiper-item>
+         <swiper-item>
+             <include src="../allviews/two.wxml"/>
+         </swiper-item>
+         <swiper-item>
+              <include src="../allviews/thrid.wxml"/>
+         </swiper-item>
+         <swiper-item>
+              <include src="../allviews/four.wxml"/>
+         </swiper-item>
+         <swiper-item>
+              <include src="../allviews/five.wxml"/>
+         </swiper-item>
+         <swiper-item>
+             <include src="../allviews/six.wxml"/>
+         </swiper-item>
+         <swiper-item>
+               <include src="../allviews/seve.wxml"/>
+         </swiper-item>
+         <swiper-item>
+             <include src="../allviews/nine.wxml"/>
+        </swiper-item>
+    </swiper> 
+</view>

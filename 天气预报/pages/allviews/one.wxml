@@ -1,0 +1,36 @@
+   <!-- 查询部分 -->
+    <view class="search">
+        <input placeholder="请输入要查的城市" bindblur="getInput" placeholder-class="place">
+        </input>
+        <icon type="search" bindtap="search" size="25"></icon>
+    </view>
+    <!-- 天气情况部分 -->
+    <view class="info">
+        <!-- 头部标题和信息 -->
+         <view class="cityInfo">
+              <text>{{cityname}}</text>
+              <view class="timeinfo">
+                  <text>{{week}}</text>
+                  <text>{{day}}</text>
+                  <text>(实时：{{temp}}℃)</text>
+              </view>
+         </view>
+         <!-- 图片信息 -->
+         <view class="picinfo">
+             <image src="{{imagPic}}" mode="aspectFill">
+             </image>
+         </view>  
+         <!-- 底部天气状况 -->
+         <view class="tempInfo">
+               <view class="left">
+                 <text class="temp">{{weather}}</text>
+               </view>
+               <view class="right">
+                 <text>{{templow}}~{{temphigh}}℃</text>
+                 <text>{{winddirect}}{{windpower}}</text>
+               </view>
+                <view class="time">
+                    <text>今天</text>
+               </view>
+         </view>
+    </view>

@@ -1,0 +1,49 @@
+<view class="container1">
+  <scroll-view class="content_info" scroll-y="true" bindscroll="scroll">
+     <!-- 顶部的轮播图 circular属性可以不留缝隙处理 -->
+     <swiper 
+          indicator-dots="true"  autoplay="true" 
+          duration="500" indicator-color="rgba(255,255,255, .5)"
+          indicator-active-color="#fff" circular>
+        <block wx:for="{{swiper_info}}" wx:key="index">
+          <swiper-item>
+                <navigator url="../test/test?id={{item.id}}"> 
+                    <image src="{{item.images_url}}" mode="aspectFill"></image>
+                </navigator>
+          </swiper-item>
+        </block>
+     </swiper>
+      <!-- 按钮部分 -->
+      <view class="btn_list">
+          <view class="btn_item" bindtap="btn_item">
+              <image src="../../images/private.png" mode="aspectFill"></image>
+              <text>私人FM</text>
+          </view>
+          <view class="btn_item" bindtap="btn_item">
+              <image src="../../images/Number.png" mode="aspectFill"></image>
+              <text>每日歌曲推荐</text>
+          </view>
+          <view class="btn_item" bindtap="btn_item">
+                <image src="../../images/HZ.png"></image>
+                <text>云音乐新歌榜</text>
+          </view>
+      </view>
+      <!-- 热门音乐部分 -->
+      <view class="hot_music_container">
+          <view class="music_titile">
+               <text>热门音乐</text>
+          </view> 
+          <view class="music_lists">
+             <block wx:for="{{music_lists}}" wx:key="index">
+                <view class="music_list_item" bindtap="music_current_item">
+                    <image src="{{item.img_url}}" mode="aspectFill"></image>
+                    <view class="content_title">
+                          <text>{{item.content}}</text>
+                    </view>
+                </view>
+             </block>     
+          </view>   
+      </view>
+  </scroll-view>
+</view>
+

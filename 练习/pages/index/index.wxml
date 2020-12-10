@@ -1,0 +1,19 @@
+<view class="param1">
+    <text>参数1：</text>
+    <input type="text" value="{{param1}}" bindblur="getParam1"></input>
+</view>
+
+<view class="param2">
+    <text>参数2：</text>
+    <input type="text" value="{{param2}}" bindblur="getParam2"></input>
+</view>
+
+<view class="btn_compare">
+    <button bindtap="Compare" type="primary">比较</button>
+</view>
+
+<view class="result">
+  结果是：<text>{{result}}</text>
+</view>
+
+

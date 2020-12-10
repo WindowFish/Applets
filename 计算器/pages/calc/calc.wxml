@@ -1,0 +1,94 @@
+<!-- 结果区域 -->
+<view class="box1">
+  <view class="box1_text"> {{screenData}}</view>
+  <view class="calculate_area">
+          <text>{{param1}}</text>
+          <text>{{sign}}</text>
+          <text>{{param2}}</text>
+          <text>{{"="}}</text>
+          <text>{{result111}}</text>
+  </view>
+</view>
+
+<!-- 按钮区域 -->
+<view class="box2">
+  <view class="box2_list">
+    <ul>
+      <view bindtap="clearscreen" id="{{idc}}">
+        <li class="first_row_color">AC</li>
+      </view>
+      <view bindtap="del" id="{{idb}}">
+        <li class="first_row_color">
+          <image class="goback" mode="aspectFit" src="../../images/goback.png"></image>
+        </li>
+      </view>
+      <view bindtap="history" >
+        <li class="first_row_color">H</li>
+      </view>
+      <view bindtap="plus" id="{{idadd}}">
+          <li class="NumberStyle">﹢</li>
+      </view>
+    </ul>
+  </view>
+  <view class="box2_list">
+    <ul>
+      <view bindtap="clickBtn" id="{{id9}}">
+           <li>9</li>
+      </view>
+      <view bindtap="clickBtn" id="{{id8}}">
+             <li>8</li>
+      </view>
+      <view bindtap="clickBtn" id="{{id7}}">
+             <li>7</li>
+      </view>
+      <view bindtap="minus" id="{{idj}}">
+            <li class="NumberStyle">﹣</li>
+      </view>
+    </ul>
+  </view>
+  <view class="box2_list">
+    <ul>
+       <view bindtap="clickBtn" id="{{id6}}">
+             <li>6</li>
+        </view>
+        <view bindtap="clickBtn" id="{{id5}}">
+              <li>5</li> 
+        </view>
+        <view bindtap="clickBtn" id="{{id4}}">
+               <li>4</li>
+        </view>
+        <view bindtap="times" id="{{idx}}">   
+              <li class="NumberStyle">×</li> 
+        </view>
+    </ul>
+  </view>
+  <view class="box2_list">
+    <ul>
+       <view bindtap="clickBtn" id="{{id3}}">
+                <li>3</li> 
+        </view>
+       <view bindtap="clickBtn" id="{{id2}}">
+               <li>2</li>
+         </view>
+        <view bindtap="clickBtn" id="{{id1}}">
+              <li>1</li> 
+        </view>
+        <view bindtap="divide" id="{{iddiv}}">
+              <li class="NumberStyle">÷</li>
+        </view>
+    </ul>
+  </view>
+  <view class="box2_list border">
+    <ul>
+        <view bindtap="clickBtn" id="{{id0}}">
+            <li class="w50">0</li>
+         </view>
+        <view bindtap="dot" id="{{idd}}"> 
+                <li>•</li>
+          </view>
+         <view bindtap="equal" id="{{ide}}">  
+                <li class="NumberStyle">=</li>
+          </view>
+    </ul>
+  </view>
+</view>

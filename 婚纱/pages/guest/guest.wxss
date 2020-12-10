@@ -1,0 +1,55 @@
+/* 背景 */
+.bg{
+    width: 100vw;
+    height: 100vh;
+}
+/* 表单部分 */
+.content{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+}
+form{
+      width:100vw;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+}
+form .userinfo{
+        width: 100%;
+        display: flex;
+        flex-direction: column; 
+}
+form .userinfo input{
+            margin-top: 15rpx;
+            border: 1px solid gray;
+            height: 50rpx;
+}
+form .select_people{
+            width: 100%;
+            margin-top: 15rpx;
+}
+form .select_people picker view{
+             height: 50rpx;
+             border: 1px solid gray;
+}
+form .wish{
+            width: 100%;
+            margin-top: 15rpx;
+}
+form .wish input{
+            width: 100%;
+            height: 50rpx;
+            border: 1px solid gray;
+}
+form button{
+            margin-top: 15rpx;
+}
+
+
+
+
+
+

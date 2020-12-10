@@ -1,0 +1,5 @@
+<view class="container">
+     <view class="NavBack">
+        <button type="primary" style="width:100%" bindtap="naBack">返回</button>
+     </view>
+</view>

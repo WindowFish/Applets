@@ -1,0 +1,3 @@
+  <view class="echart_panel">
+      <ec-canvas  ec="{{ ecLine }}"></ec-canvas>
+  </view>

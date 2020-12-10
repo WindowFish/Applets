@@ -1,0 +1,20 @@
+<view class="search">
+  <input type="text" placeholder="请输入要的地方" bindblur="getContent" value="{{searchContent}}"/>
+  <icon type="search"  bindtap="searchEnd"></icon>
+</view>
+<map 
+id="mymap"
+longitude="{{longitude}}"
+latitude="{{latitude}}"
+markers="{{markers}}"
+scale="{{scale}}"
+style="width:{{mapw}};height:{{maph}}"
+controls="{{controls}}"
+bindcontroltap="controltap"
+bindmarkertap="markertap"
+bindregionchange="bindregionchange"
+polyline="{{polyline}}"
+show-location
+>
+
+</map>

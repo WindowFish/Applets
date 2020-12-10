@@ -1,0 +1,31 @@
+   <!-- 查询部分 -->
+ 
+    <!-- 天气情况部分 -->
+    <view class="info">
+         <view class="cityInfo">
+              <text>{{cityname}}</text>
+              <view class="timeinfo">
+                  <text>{{futrueTemp[2].week}}</text>
+                  <text>{{futrueTemp[2].date}}</text>
+                  <text>(实时：{{futrueTemp[2].day.temphigh}}℃)</text>
+              </view>
+         </view>
+         <!-- 图片信息 -->
+         <view class="picinfo">
+             <image src="{{futruePic[1]}}" mode="aspectFill">
+             </image>
+         </view>  
+         <!-- 底部天气状况 -->
+         <view class="tempInfo">
+               <view class="left">
+                 <text class="temp">{{futrueTemp[2].day.weather}}</text>
+               </view>
+               <view class="right">
+                 <text>{{futrueTemp[2].night.templow}}~{{futrueTemp[2].day.temphigh}}℃</text>
+                 <text>{{futrueTemp[2].day.winddirect}}{{futrueTemp[2].day.windpower}}</text>
+               </view>
+                <view class="time">
+                    <text>未来第二天</text>
+               </view>
+         </view>
+    </view>

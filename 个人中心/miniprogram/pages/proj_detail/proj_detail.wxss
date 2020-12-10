@@ -1,0 +1,60 @@
+page{
+  width: 100vw;
+  height: 100vh;
+}
+.bg{
+  width: 100vw;
+  height: 100vh;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    z-index: 999;
+    margin-top:20rpx;
+}
+.info1,.info2,.info3{
+    width: 100%;
+    margin-top: 50rpx;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  
+}
+.info1 .imag_container image{
+   width: 70rpx;
+   height: 70rpx;
+}
+.info1>text{
+   margin-left: 20rpx;
+}
+.info1>view{
+  margin-right: 20rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.info1>view image:first-child{
+    margin-right: 8px;
+    border-radius: 50%;
+}
+.info1>view image:last-child{
+  margin-left: 3px;
+  width: 50rpx;
+  height: 50rpx;
+}
+.info2>text:first-child,.info3>text:first-child{
+    margin-left: 20rpx;
+}
+.info2>text:last-child,.info3>text:last-child{
+  margin-right: 20rpx;
+}
+.btn{
+  width: 100%;
+  margin-top: 50rpx;
+}
+.btn button{
+  border-radius: 10px;
+}
+

@@ -1,0 +1,47 @@
+<!-- 顶部标题部分 -->
+<view class="title_container">
+      <view class="tab_item {{tab==0? 'active' : '0'}}" bindtap="show_topic" id="{{0}}">
+      音乐推荐
+      </view>
+      <view class="tab_item {{tab==1? 'active' : '0'}}" bindtap="show_topic" id="{{1}}">
+      播放器
+      </view>
+      <view class="tab_item {{tab==2? 'active' : '0'}}" bindtap="show_topic" id="{{2}}">
+      播放列表
+      </view>
+</view>
+<!-- 推荐 播放器  播放列表三部分 -->
+<view class="function_list_container">
+    <swiper current="{{current_topic}}" bindchange="changTab" >
+        <swiper-item id="{{0}}">
+            <include src="../wxml/info.wxml"/>
+        </swiper-item>
+        <swiper-item  id="{{1}}">
+             <include src="../wxml/play.wxml"/>
+        </swiper-item>
+        <swiper-item id="{{2}}">
+            <include src="../wxml/payList.wxml" />
+        </swiper-item>
+    </swiper>
+</view>
+<!-- 底部播放器 -->
+<view class="play">
+    <view class="player">
+        <view class="player_pic"> 
+          <image src="{{play.coverImageUrl}}" mode="aspectFill"></image>
+        </view>
+        <view class="player_info">
+                <text>{{play.title}}</text>
+                <text>{{play.signer}}</text>
+        </view>
+        <view class="player_function">
+              <image src="../../images/list.png" mode="aspectFill" bindtap="changePage"></image>
+             <image src="../../images/begin.png" mode="aspectFill" bindtap="play" wx:if="{{state=='paused'}}"></image>
+             <image src="../../images/end.png" mode="aspectFill" bindtap="pause" wx:else></image>
+             <image src="../../images/next.png" mode="aspectFill"
+             bindtap="next"></image>
+        </view>
+    </view>
+</view>
+
+

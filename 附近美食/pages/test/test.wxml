@@ -1,0 +1,3 @@
+<view class="container">
+     <button style="width:100%" bindtap="search1" type="primary">测试search</button>
+</view>

@@ -1,0 +1,57 @@
+page{
+   width: 100%;
+   height: 100%;
+}
+.container{
+  width: 100%;
+  height: 100%;
+}
+.container .infoContiner{
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   margin-top: 20rpx;
+   height: 150rpx;
+   justify-content: center;
+   border-bottom: 1px solid gray;
+}
+.container .infoContiner>text,.container .infoContiner>view{
+    margin-left: 10rpx;
+}
+.container .infoContiner>view{
+  margin-top: 10rpx;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+}
+.container .add{
+    width: 100%;
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    display: flex;
+    align-items: center;
+    height: 120rpx;
+  justify-content: space-between;
+  border-top:1px solid gray;
+    
+}
+.container .add .left{
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+.container .add .left image{
+  width: 40rpx;
+  height: 40rpx;
+}
+.container .add .left text{
+  margin-left: 10rpx;
+}
+.container .add image{
+     width: 40rpx;
+     height: 40rpx;
+     margin-right: 5rpx;
+}
+

@@ -1,0 +1,89 @@
+<view class="container">
+       <!-- 收索框部分  -->
+      <view class="search">
+         <input placeholder="请输入城市" bindblur="getContent" value="{{searchValue}}"/>
+         <icon type="search" bindtap="search" class="icon"></icon>
+      </view>
+       <!-- 上部分 -->
+       <view class="todayTemp">
+            <!-- 上 -->
+            <view class="cityname">
+                <text>{{InitTodayTemp[0]}}</text>
+            </view> 
+            <!-- 中 -->
+            <view class="citytemp">
+                  <text>{{InitTodayTemp[1]}}°C</text>
+                  <text class="windDir">
+                  {{InitTodayTemp[2]}} / {{InitTodayTemp[3]}}{{InitTodayTemp[4]}}</text>
+                  <text>{{InitTodayTemp[5]}} {{InitTodayTemp[6]}}</text>
+            </view> 
+            <!-- 下 -->
+          <view class="today">
+                 <view class="cloud">
+                      <text>今天</text>
+                      <text>{{InitTodayTemp[2]}}</text>
+                 </view>
+                 <text>{{InitTodayTemp[8]}}~{{InitTodayTemp[9]}}°C</text>
+                 <text>{{InitTodayTemp[3]}}{{InitTodayTemp[4]}}</text>
+          </view>
+       </view>
+       <!-- 下半部分 -->
+      <view class="allDay" >
+      <scroll-view scroll-x>
+          <block wx:for="{{timeAndWindInfo}}" wx:key="index">
+            <view bindtap="seeDetailInfo" data-id="{{index}}"
+             class="{{tab==index? 'active' : ''}}">
+                  <view class="container">
+                      <!-- 上 -->
+                      <view class="time">
+                              <text>{{item.week}}</text>
+                              <text>{{item.date}}</text>
+                      </view>
+                      <!-- 中 -->
+                     <view class="img">
+                            <image src="{{item.day.img}}"></image>
+                     </view> 
+                      <!-- 下 -->
+                      <view>
+                            <text>{{item.day.windpower}}</text>
+                            <text>{{item.day.winddirect}}</text>
+                      </view>   
+                  </view>
+            </view>
+          </block>
+        </scroll-view>
+     </view>
+     <!-- 底部 -->
+     <view class="bottom">
+        <swiper circular="{{true}}" current="{{current}}" bindchange="changeSwiper">
+                <swiper-item>
+                     <include src='../views/info1.wxml'/>
+                </swiper-item>
+                  <swiper-item>
+                     <include src='../views/info2.wxml'/>
+                </swiper-item>
+                  <swiper-item>
+                     <include src='../views/info3.wxml'/>
+                </swiper-item>
+                  <swiper-item>
+                     <include src='../views/info4.wxml'/>
+                </swiper-item>
+                  <swiper-item>
+                     <include src='../views/info5.wxml'/>
+                </swiper-item>
+                  <swiper-item>
+                     <include src='../views/info6.wxml'/>
+                </swiper-item>
+                  <swiper-item>
+                     <include src='../views/info7.wxml'/>
+                </swiper-item>
+         </swiper>
+     </view>
+     <!-- 折线图 -->
+     <view class="echart"> 
+          <view class="title">
+            <text>未来一周气温变化</text>
+          </view>
+            <ec-canvas id="mychart-dom-bar" canvas-id="mychart-bar" ec="{{ ec }}"></ec-canvas>
+     </view>
+</view>

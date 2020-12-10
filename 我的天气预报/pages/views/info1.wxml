@@ -1,0 +1,28 @@
+ <!-- 上部分 -->
+<view class="container">
+          <view class="top">
+               <text>今天 {{InitTodayTemp[12]}}</text>
+               <text>{{InitTodayTemp[2]}} {{InitTodayTemp[8]}}~{{InitTodayTemp[9]}}°C</text>
+          </view>
+          <!-- 下部分 -->
+          <view class="bottom">
+               <view class="wind">
+                   <text>风向风力</text>
+                   <text>{{InitTodayTemp[3]}}{{InitTodayTemp[4]}}</text>
+               </view>
+               <view class="env">
+                  <view>
+                      <text>穿衣</text>
+                      <text>{{InitTodayTemp[10]}}</text>
+                  </view>
+                   <view>
+                      <text>感冒指数</text>
+                      <text>{{InitTodayTemp[11]}}</text>
+                  </view>
+               </view>  
+               <view class="sun">
+                  <text>日出日落</text>
+                  <text>{{InitTodayTemp[13]}}/{{InitTodayTemp[14]}}</text>
+               </view>
+          </view>
+</view> 

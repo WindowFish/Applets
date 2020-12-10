@@ -1,0 +1,10 @@
+   <swiper 
+      indicator-dots="true" autoplay
+      duration="1000" circular  indicator-active-color="#ff4c94"
+      indicator-color="white" vertical interval="3500">
+        <block wx:for="{{photo}}" wx:key="index">
+          <swiper-item>
+              <image src="{{item.image}}" mode="aspectFill"></image>
+          </swiper-item>
+        </block>
+      </swiper>

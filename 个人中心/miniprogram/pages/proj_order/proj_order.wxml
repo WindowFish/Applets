@@ -1,0 +1,35 @@
+<view class="container">
+     <!-- 顶部title -->
+     <view class="title">
+         <text>欢迎进入快递查询系统</text>
+     </view>
+    <!-- 输入查询内容 -->
+     <view class="find_info">
+        <!-- 查公司 -->
+           <view class="findByCompany">
+              <text>请选择快递公司:</text>
+              <picker value="{{index}}" range="{{com}}" bindchange="changePick">
+                  <view>{{com[index]}}</view>
+              </picker>
+           </view>
+           <!-- 查订单号 -->
+           <view class="findBuyNumber">
+                <text>订单号:</text>
+                <view class="number">
+                  <input type="number" placeholder="请输入订单号" bindblur="getNumber" value="{{Nvalue}}"></input>
+                </view>
+           </view>
+           <button type="primary" style="width:100%" bindtap="search">
+           查询
+           </button>
+     </view>
+     <!-- 显示查询结果 -->
+     <view class="result">
+          <scroll-view scroll-y>
+                  <view class="myresult">
+                         <text>{{showCompany}}</text>
+                         <text>{{showNumber}}</text>
+                  </view>
+          </scroll-view>
+     </view>
+</view>

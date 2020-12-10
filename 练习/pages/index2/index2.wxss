@@ -1,0 +1,55 @@
+page{
+  width: 100%;
+  height: 100%;
+}
+.container{
+  width: 100%;
+  height: 100%;
+}
+.container form{
+    width: 100%;
+}
+form .name_age{
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+}
+form .name_age text,form .name_age input{
+  margin-top: 5rpx;
+}
+form .name_age input{
+      border: 1px solid black;
+}
+form .sex_skill{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+form .sex_skill .sex text,form .sex_skill .sex radio-group{
+  margin-top: 5rpx;
+}
+form .sex_skill .skill text,form .sex_skill .skill checkbox-group{
+  margin-top: 5rpx;
+}
+form .sex_skill .skill checkbox-group {
+    display:flex ;
+    flex-direction: column;
+}
+.suggess{
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+}
+.suggess text,.suggess textarea{
+   margin-top: 5rpx;
+}
+.suggess textarea{
+    border: 1px solid black;
+}
+.btn{
+   width: 100%;
+   margin-top: 5rpx;
+}
+.btn button{
+    width: 100%;
+}

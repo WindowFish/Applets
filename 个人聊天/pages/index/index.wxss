@@ -1,0 +1,56 @@
+page{
+   width: 100%;
+   height: 100%;
+}
+.container{
+    width: 100%;
+    height: 100%
+}
+/* 上部分聊天内容设置  */
+.container .content1{
+     width: 100%;
+     height:250rpx;
+     display: flex;
+     flex-wrap: wrap;
+}
+.container .content1 view{
+      width: 100%;
+      height: 48%;
+      margin-top: 20rpx;
+      display: flex;
+      align-items: center;
+}
+.container .content1 view:first-child>image{
+                width: 100rpx;
+                height: 100%;
+}
+.container .content1 view:first-child>text{
+            margin-left: 30rpx;
+}
+.container .content1 view:last-child>image{
+            width: 100rpx;
+            height: 100%;
+}
+.container .content1 view:first-child>text{
+      margin-left: 30rpx;
+}
+
+
+.container .bottom{
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    width: 100%;
+    height: 100rpx;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px sandybrown solid;
+}
+.container .bottom input{
+    width: 70%;
+    height:60rpx;
+    border: 1px solid gray;
+    margin-left: 15rpx;
+}

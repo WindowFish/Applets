@@ -1,0 +1,252 @@
+page{
+   width: 100%;
+   height: 100%;
+   background-color: rgb(120, 206, 218);
+}
+/* 总容器 */
+.container{
+    width: 100%;
+    height: 100%;
+}
+/* 搜索框部分 */
+.search{
+      width: 100%;
+      height: 60rpx;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 10px;
+      background-color: rgb(120, 206, 218);
+      margin-bottom: 10rpx;
+}
+.search input{
+        height: 100%;
+        width: 80%;
+        border: 1px solid gray;
+        border-right: none;
+}
+.search .icon{
+        height: 100%;
+        border: 1px solid gray;
+        border-left: none;
+}
+/* 上部分 */
+.container .todayTemp{
+  color: white;
+   width: 100%;
+   height: 40%;
+   background-color: rgb(120, 206, 218);
+}
+/* 上 */
+.container .todayTemp .cityname{
+     width: 100%;
+     display: flex;
+     height: 50rpx;
+     align-items: center;
+     justify-content: center;
+}
+.container .todayTemp .cityname text{ 
+      margin-left: 20rpx;
+      color: white;
+}
+/* 中 */
+.container .citytemp{
+      width: 100%;
+      height: 60%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+}
+.container .citytemp text:first-child{
+        font-size: 45rpx;
+}
+.container .citytemp text.windDir{
+        margin-top: 45rpx;
+        font-size:35rpx;
+}
+.container .citytemp text:last-child{
+      border-radius: 20%;
+       background-color: rgb(148, 233, 20);
+       color: rgb(55, 112, 80);
+       margin-top: 45rpx;
+       font-size:35rpx;
+}
+/* 下 */
+.container .today{
+      width: 100%;
+      height:25%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+}
+.container .today .cloud,.container .today text{
+              flex: 1;
+}
+.container .today text{
+    display: flex;
+    justify-content: center;
+}
+/* 下部分 */
+.allDay{
+    color: white;
+    width: 100%;
+    height: 40%;
+    white-space:nowrap;
+    border-top: 1px solid grey;
+    box-sizing: border-box;
+}
+.allDay   scroll-view{
+     height: 100%;
+}
+.allDay  scroll-view view{
+      width: 25%;
+      height: 100%;
+      display:inline-block;
+      border-left: 1px solid grey;
+      box-sizing: border-box;
+}
+.allDay  scroll-view view .container{
+    border-left: 1px solid grey;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center; 
+}
+.allDay  scroll-view view .container:first-child{
+   border-left: none;
+}
+.allDay  scroll-view view .container:hover{
+  background-color: rgb(201, 196, 196)
+}
+/* 每个container中的设置 */
+.allDay  scroll-view view  .container view{
+      width: 100%;
+      height: 40%;
+}
+.allDay  scroll-view view  .container view:first-child{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-size: 27rpx;
+}
+.allDay  scroll-view view  .container view:last-child{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-size: 27rpx;
+}
+
+.allDay  scroll-view view  .container view:last-child text{
+      margin-top: 40rpx;
+}
+
+.allDay  scroll-view view  .container view.img{
+        width: 100%;
+        height: 20%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+}
+.allDay  scroll-view view  .container view.img image{
+        width:100rpx;
+        height: 100%;
+}
+/* 底部 20% */
+.container .bottom{
+      color: white;
+      width: 100%;
+      height: 20%;
+}
+.container .bottom swiper{
+      width: 100%; 
+      height: 100%;
+      border: 1px solid grey;
+      box-sizing: border-box;
+}
+.container .bottom swiper swiper-item .container{
+  background-color: rgb(120, 206, 218);
+       width: 100%;
+       display: flex;
+       flex-wrap: wrap;
+
+}
+.container .bottom swiper swiper-item .container .top{
+          width: 100%;
+          height: 50%;
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          align-items: center;
+          font-size: 40rpx;
+}
+.container .bottom swiper swiper-item .container .top text{
+      margin-top: 10rpx;
+      margin-left: 30rpx;
+}
+.container .bottom swiper swiper-item .container .bottom{
+        width: 100%;
+        height: 50%;
+        display: flex;
+        justify-content: space-between;
+}
+.container .bottom swiper swiper-item .container .bottom .wind{     
+       font-size: 35rpx;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       justify-content: center;
+}
+.container .bottom swiper swiper-item .container .bottom .env
+{
+    font-size: 35rpx;
+    flex: 1;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+ }
+ .container .bottom swiper swiper-item .container .bottom .env view{
+        display: flex;
+        flex-direction: column;
+ }
+
+.container .bottom swiper swiper-item .container .bottom .sun{
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-size: 35rpx;
+}
+/* 折线图部分 */
+.echart{
+      width: 100%;
+      height: 500rpx;
+      color: white;
+}
+.echart .title{
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   margin-top: 15rpx;
+   margin-bottom: 15rpx;
+}
+.echart .title text{
+      font-weight: 600;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.active{
+      background-color: rgb(201, 196, 196)
+}
+
+
+
+
+
+

@@ -1,0 +1,18 @@
+<view class="container">
+     <!-- 标题和个人图片 -->
+     <view class="title_pic">
+          <text>欢迎来到我的个人页</text>
+          <view class="imagcontainer">
+              <text bindtap="changePage">点我跳转</text>
+               <image src="../../images/avatar.jpg" bindtap="changePage" mode="aspectFill"></image>
+          </view>
+     </view>
+     <!-- 个人信息 -->
+    <view class="personinfo">
+      <text>昵名:WindowFish</text>
+      <text>星座:天蝎座</text>
+      <text>兴趣:看书、运动</text>
+      <text>QQ:9256467**</text>
+      <text>电话:13535****34</text>
+    </view>
+</view>

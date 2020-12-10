@@ -1,0 +1,302 @@
+/* 整个页面  */
+page{
+    background-color: black;
+    width: 100%;
+    height: 100%;
+}
+/* 顶部标题部分 */
+.title_container{
+     width: 100%;
+     display: flex;
+     background-color: black;
+}
+.title_container .tab_item{
+       flex: 1;
+       height: 100rpx;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       color: white;
+}
+
+/* 推荐 播放器  播放列表三部分 */
+.function_list_container{
+       width: 100%;
+       height: 100%;
+      /* background-color: red; */
+}
+.function_list_container swiper,.function_list_container swiper-item{
+      width: 100%;
+      height: 100%;
+}
+.active{
+    border-bottom:2px solid #c25b5b;
+    color: #c25b5b;
+}
+
+/* 音乐推荐部分 */
+::-webkit-scrollbar{
+      width:0px;
+      height: 0px;
+      color: transparent;
+}
+.container1{
+    width: 100%;
+    height: 100%;
+ }
+.content_info{
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+}
+/* 音乐推荐部分中轮播图部分 */
+.content_info swiper{
+     width: 100%;
+     height: 330rpx ;
+}
+.content_info swiper swiper-item navigator{
+    width: 100%;
+    height: 100%;
+}
+.content_info swiper swiper-item navigator image{
+      width: 100%;
+      height: 100%;
+}
+/* 音乐推荐部分中按钮部分 */
+.btn_list{
+      width: 100%;
+      background-color: black;
+      display: flex;
+}
+.btn_list .btn_item{
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+}
+.btn_list .btn_item image{
+           width: 60rpx;
+           height:60rpx;
+           border-radius: 50%;
+           border: 1px solid rgb(211, 204, 204);
+           box-sizing: border-box;
+           margin-top: 10px;
+}
+.btn_list .btn_item text{
+    font-size: 35rpx;
+    margin-top: 10px;
+}
+/* 音乐推荐部分中热门音乐部分 */
+.hot_music_container{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      background-color: black;
+}
+.hot_music_container .music_titile{
+     width: 100%;
+     margin-top: 10px;
+    
+}
+.hot_music_container .music_titile text{
+       margin-left: 30rpx;
+       color: white;
+       font-size: 35rpx;
+       font-weight: 600;
+}
+.hot_music_container .music_lists{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+}
+.hot_music_container .music_lists .music_list_item{
+         width: 33.3%;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         flex-direction: column;
+         margin-top: 30rpx;
+}
+.hot_music_container .music_lists .music_list_item image{
+            width: 200rpx;
+            height: 150rpx;
+            margin-top: 15rpx;
+}
+.hot_music_container .music_lists .music_list_item .content_title{
+      width: 100%;
+      margin-top: 15rpx;
+}
+.hot_music_container .music_lists .music_list_item  .content_title text{
+             color: white;
+             font-size: 33rpx;
+             margin-left: 20rpx;
+}
+
+/* 底部播放器 */
+.play{
+     width: 100%;
+     background-color:black;
+     position: fixed;
+     bottom: 0px;
+     left: 0px;
+     right: 0px;
+}
+.play .player{
+        width: 100%;
+        display: flex;      
+}
+.play .player .player_pic {
+        flex: 1;
+        height: 140rpx;
+}
+.play .player .player_pic image{
+        width: 100%;
+        height:100%;
+}
+.play .player .player_info {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      text-overflow:ellipsis;
+      white-space: nowrap;
+      align-items: center;
+}
+.play .player .player_info text{
+            margin-left: 15rpx;
+            color: white;
+            font-size: 35rpx;
+            margin-top: 15rpx;
+            overflow: hidden;
+            text-overflow:ellipsis;
+            white-space: nowrap;
+}
+
+.play .player .player_function {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+}
+.play .player .player_function image{
+            width: 60rpx;
+            height: 60rpx;
+}
+.play .player .player_function image:first-child{
+            margin-right: 15rpx;
+}
+.play .player .player_function image:last-child{
+           margin-left:15rpx;
+}
+/* 播放器部分 */
+.play_container{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+}
+.play_container .play_title{
+            width: 100%;
+            height: 20%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: black;
+}
+.play_container .play_title text{
+            font-size: 40rpx;
+            color: white;
+            font-weight: 600;
+            margin-top: 20rpx;
+}
+.play_container .singer_Img{
+            width: 100%;
+            height: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: black;
+}
+.play_container .singer_Img image{
+         border-radius: 50%;
+         width: 400rpx;
+         height: 400rpx;
+         animation: movePic 10s infinite linear;
+         border:1px solid #333;
+}
+@keyframes movePic{
+       from{
+             transform: rotate(0deg);
+       }to{
+                  transform: rotate(360deg);
+       }
+}
+.play_container .progess_bar{
+            width: 100%;
+            height: 20%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+}
+.play_container .progess_bar .time{
+            flex-basis: 25%;
+            display: flex;
+            justify-content: center;
+            color: white;
+}
+.play_container .progess_bar .current_progess{
+              flex-basis: 50%;
+}
+.play_container .progess_bar .current_progess .slider{
+                 width: 100%;
+}
+/* 播放列表 */
+.payListScroll{
+       width: 100%;
+       height: 100%;
+}
+.payListScroll .container_payList{
+       width: 100%;
+       height: 145rpx;   
+       display: flex;
+       align-items: center;
+       margin-top: 20rpx;
+}
+.payListScroll  .container_payList  .singer_pic{
+            width: 30%;
+            height: 100%;
+}
+.payListScroll .container_payList .singer_pic image{
+            width: 100%;
+            height: 100%;
+}
+.payListScroll .container_payList .singer_info{
+      width: 40%;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      text-overflow:ellipsis;
+      white-space: nowrap;
+}
+.payListScroll .container_payList .singer_info text{
+        color: white;
+        margin-left: 20rpx;
+        margin-top: 20rpx;
+        overflow: hidden;
+        text-overflow:ellipsis;
+        white-space: nowrap;
+}
+.payListScroll .container_payList .current_state{
+       width: 30%;
+       display: flex;
+       justify-content: center;
+}
+.payListScroll .container_payList .current_state text{
+        color: white;
+}
+
+
+

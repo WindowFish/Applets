@@ -1,0 +1,21 @@
+<view class="container">
+      <!-- 聊天内容显示 -->
+      <view class="content1">
+       <!-- 上部分 -->
+        <view style="display:{{talkStyle1}}">
+            <image src="../../images/me.jpg" mode="aspectFill"></image>
+            <text>{{content}}</text>
+        </view>
+        <!-- 下部分 -->
+        <view style="display:{{talkStyle2}}">
+            <image src="../../images/avatar.png" mode="aspectFill"></image>
+            <text>{{responseContent}}</text>
+        </view>
+       </view>
+      <!-- 底部发送框 -->
+      <view class="bottom">
+            <input bindblur="getCurrentValue" value="{{content}}" placeholder="请输入你想说的话">
+            </input>
+            <button type="primary" bindtap="sendMsg" size="mini">发送</button>
+      </view>
+</view>

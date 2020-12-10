@@ -1,0 +1,11 @@
+<map
+   id="myMap"
+   longitude="{{longitude}}"
+   latitude="{{latitude}}"
+   markers="{{markers}}"
+   controls="{{controls}}"
+   style="width:{{mapw}};height:{{maph}}"
+   scale="{{scale}}"
+   polyline="{{polyline}}"
+   >
+</map>

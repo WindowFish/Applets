@@ -1,0 +1,41 @@
+<!-- 右上方的音乐按钮部分 -->
+  <view class="player_music player-{{isPlayingMusic ? 'play' : 'pause'}}"  bindtap="play">
+    <image src="../../images/music_icon.png" mode="aspectFill"></image>
+    <image src="../../images/music_play.png" mode="appectFill"></image>
+  </view>
+<!-- 背景图部分 -->
+<image src="../../images/bg2_.jpg" mode="aspectFill" class="bg">
+</image>
+<!-- 内容区域 -->
+<view class="content">
+  <!-- 顶部GIF图片 -->
+  <image class="content-gif" src="../../images/save_the_date.gif" />
+  <!-- 标题 -->
+  <view class="content-title">邀请函</view>
+  <!-- 新郎和新娘的合照 -->
+  <view class="content-avatar">
+    <image src="../../images/avatar.png" />
+  </view>
+  <!-- 新娘和新郎的名字 -->
+  <view class="content-info">
+    <view class="content-name" bindtap="callGroom">
+      <image src="../../images/tel.png" bindtap="callGroom" />
+      <view>小明</view>
+      <view>新郎</view>
+    </view>
+    <view class="content-wedding">
+      <image src="../../images/wedding.png"></image>
+    </view>
+    <view class="content-name" bindtap="callBride">
+      <image src="../../images/tel.png" />
+      <view>小花</view>
+      <view>新娘</view>
+    </view>
+  </view>
+  <!-- 婚礼信息 -->
+  <view class="content-address">
+    <view>我们诚邀您来参加我们的婚礼</view>
+    <view>时间：2020年9月20日</view>
+    <view>地点：广东交通职业技术学院</view>
+  </view>
+</view>

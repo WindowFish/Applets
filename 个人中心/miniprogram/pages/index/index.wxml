@@ -1,0 +1,13 @@
+<view class="container">
+    <view class="router">
+        <button bindtap="navTo" style="width:100%" type="primary">
+        navTo使用</button>
+        <button bindtap="reTo" style="width:100%" type="primary">
+        reTo使用</button>
+        <button bindtap="reL" style="width:100%" type="primary">reL使用</button>
+        <button bindtap="choImage" style="width:100%" type="primary">选图片</button>
+        <button bindtap="choAddress" style="width:100%" type="primary">选地址</button>
+        <button bindtap="makPho" style="width:100%" type="primary">打电话</button>
+        <image src="{{choosePic}}" mode="aspectFll"></image>
+    </view>
+</view>

@@ -1,0 +1,43 @@
+<!-- <view class="content_video">
+    <video src="{{src}}"
+       id="myVideo"  danmu-list="{{danumList}}" controls
+       enable-danmu>
+    </video>
+    <view class="sendMessage">
+         <input type="text" bindblur="bindInputBlur" class="sendContext" placeholder="请输入你要评论的信息"/>
+         <button bindtap="bindSendNum" type="primary">发送序幕</button> -->
+         <!-- 获取本地视频来播放 -->
+        <!-- <button bindtap="bindGetLocation">获取本地视频</button>
+    </view>
+</view>
+
+<txv-video vid="e0354z3cqjp" playerid="txv1" autoplay="true"></txv-video> -->
+<wxs module="formatData">
+      module.exports = function(timeStamp){
+           var date = getDate(timeStamp);
+           var y = date.getFullYear()+1;
+           var m = date.getMonth()+1;
+           var d = date.getDate();
+           var h = date.getHours();
+           var i = date.getMinutes();
+           var s = date.getSeconds();
+           return y+"-"+m+"-"+d+" "+h+":"+i+":"+s;
+      }
+</wxs>
+
+<view class="video_container">
+   <block wx:for="{{video_info_list}}" wx:key="index">
+          <!-- 标题和时间 -->
+             <view class="title"> 
+                  <text>标题 : {{item.title}}</text>
+                  <text>时间 : {{formatData(item.times)}}</text>
+             </view>
+            <!-- 视频部分 -->
+         <view class="video">
+                <video src="{{item.video_url}}" id="myVideo" controls>
+                </video>
+         </view>
+   </block>  
+</view>
+
+

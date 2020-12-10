@@ -1,0 +1,10 @@
+<view class="content">
+        <block wx:for="{{logs}}" wx:for-item="log" wx:key="index"> 
+            <view class="item">{{log}}</view>
+        </block>
+</view>
+<view class="btn_back">
+  <button type="primary" bindtap="btn_back">返回</button>
+</view>
+
+

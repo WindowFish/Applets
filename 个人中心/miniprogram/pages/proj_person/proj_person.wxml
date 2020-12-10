@@ -1,0 +1,38 @@
+<view class="container">
+    <!-- 上部分头像 -->
+    <view class="userPic"> 
+         <image src="{{personPic}}" mode="aspectFill"></image>
+    </view>
+    <!-- 支付部分 -->
+    <view class="pay_fun">
+       <block wx:for="{{payinfoList}}" wx:key="index">
+          <view class="payList">
+              <image src="{{item.imag}}"></image>
+              <text>{{item.text}}</text>
+          </view>
+       </block>
+    </view>
+    <!-- 底部 -->
+    <view class="fun_list">
+       <view bindtap="info">
+          <text>个人资料</text>
+          <image src="../../images/arrow.png"></image>
+       </view>
+       <view bindtap="order">
+          <text>订单物流查询</text>
+          <image src="../../images/arrow.png"></image>
+       </view>
+       <view bindtap="navToAddress">
+            <text>选择收货地点</text>
+            <image src="../../images/arrow.png"></image>
+       </view>
+       <view bindtap="MakeCall">
+          <text>客服联系方式</text>
+          <image src="../../images/arrow.png"></image>
+       </view>
+       
+
+    </view>
+
+
+</view>

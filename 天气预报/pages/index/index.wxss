@@ -1,0 +1,135 @@
+page{
+  width:100vw;
+  height: 100vh;
+}
+
+.container{
+   width: 100vw;
+   height: 100vh;
+   position: fixed;
+   left: 0px;
+   right: 0px;
+   top: 0px;
+}
+  image{
+   width: 100vw;
+   height: 100vh;
+}
+.container swiper{
+   width: 100%;
+   height: 100%;
+}
+.container .search{
+  width: 100%;
+  height: 60rpx;
+  display: flex;
+  justify-content: center;
+  margin-top: 50rpx;
+}
+.container .search input{
+     width: 80%;
+     height: 100%;
+     border: 1px solid white;
+}
+.container .search icon{
+    height: 100%;
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    border: 1px solid white;
+}
+.place{
+   color: black;
+   background-color: whitesmoke;
+}
+/* 天气状况 */
+.info{
+    width: 100%;
+    height: 100%;
+    margin-top: 35rpx;
+}
+.info .cityInfo{
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+}
+.info .cityInfo text{
+       width: 100%;
+       display: flex;
+       justify-content: center;
+       margin-top: 10rpx;
+       color: white;
+       font-size: 45rpx;
+       font-weight: 600;
+}
+.info  .cityInfo .timeinfo{
+          display: flex;
+          width: 100%;
+          justify-content: center;
+          margin-top: 10rpx;
+}
+.info  .cityInfo .timeinfo text{
+          font-size: 35rpx;
+          color: white;
+}
+.info .picinfo{
+       width: 100%;
+       display: flex;
+       justify-content: center;
+       margin-top: 35rpx;
+}
+.info .picinfo image{
+          width: 350rpx;
+          height: 300rpx;
+}
+.info .tempInfo{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 45rpx;
+        color: white;
+        font-size: 35rpx;
+}
+.info .tempInfo view{
+      flex: 1;
+}
+.info .tempInfo view.left{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+  
+.info .tempInfo view.right{
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+}
+.info .tempInfo view.time{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.info .tempInfo view.right>text{
+  margin-top: 10rpx;
+}
+/* 设计折线图 */
+.mycontainer{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+} 
+ec-canvas {
+  width: 100%;
+  height: 100%;
+}
+
+
+
+

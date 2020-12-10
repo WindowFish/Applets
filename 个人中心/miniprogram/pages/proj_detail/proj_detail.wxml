@@ -1,0 +1,21 @@
+<image src="../../images/bg.jpg" class="bg"></image>
+<view class="container">
+      <view class="info1"> 
+         <text>头像</text>
+       <view class="imag_container">
+         <image src="{{usImage}}" bindtap="changeImg"></image>
+            <image src="../../images/arrow.png" bindtap="backToPerson"></image>
+        </view>
+      </view>
+      <view class="info2">
+         <text>昵称</text>
+         <text>{{name}}</text>
+     </view> 
+     <view class="info3">
+         <text>性别</text>
+         <text>{{sex}}</text>
+    </view> 
+    <view class="btn">
+      <button style="width:100%" type="primary" bindtap="changeInfo">修改资料</button>
+    </view>
+</view>

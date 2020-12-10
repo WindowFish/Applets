@@ -1,0 +1,22 @@
+<view class="play_container">
+      <!-- 顶部 歌手和歌曲-->
+      <view class="play_title">
+         <text>{{play.title}}</text>
+         <text>--{{play.signer}}--</text>
+      </view>
+      <!-- 歌手图片 -->
+      <view class="singer_Img">
+            <image src="{{play.coverImageUrl}}" mode="aspectFill"
+            style="animation-play-state:{{state}}"
+            ></image>
+      </view>
+      <view class="progess_bar">
+       <view class="time"><text>{{play.currentTime}}</text></view>
+        <view class="current_progess">
+             <slider bindchange="sliderChange" value="{{play.percent}}" activeColor="#d33a31"
+             block-size="12" backgroundColor="#dadada">
+             </slider>
+        </view>
+        <view class="time"><text>{{play.duration}}</text></view>
+      </view>
+</view>

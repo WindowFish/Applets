@@ -1,0 +1,18 @@
+ <!-- 上部分 -->
+<view class="container">
+          <view class="top">
+               <text>{{timeAndWindInfo[5].week}} {{timeAndWindInfo[5].date}}</text>
+               <text>{{timeAndWindInfo[5].day.weather}} {{timeAndWindInfo[5].night.templow}}~{{timeAndWindInfo[5].day.temphigh}}°C</text>
+          </view>
+          <!-- 下部分 -->
+          <view class="bottom">
+               <view class="wind">
+                   <text>风向风力</text>
+                   <text>{{timeAndWindInfo[5].day.winddirect}}{{timeAndWindInfo[5].day.windpower}}</text>
+               </view>
+               <view class="sun">
+                  <text>日出日落</text>
+                  <text>{{timeAndWindInfo[5].sunrise}}/{{timeAndWindInfo[5].sunset}}</text>
+               </view>
+          </view>
+</view> 

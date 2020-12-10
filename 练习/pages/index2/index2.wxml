@@ -1,0 +1,53 @@
+ <view class="container">
+  <form bindsubmit="submit">
+      <!-- 姓名和年龄部分 -->
+    <view class="name_age">
+         <text>姓名:</text>
+         <input placeholder="请输入你姓名" name='user'/> 
+         <text>年龄:</text>
+         <input placeholder="请输入你的年龄" name='value'/>
+     </view>
+    <view class="sex_skill">
+        <!-- sex -->
+        <view class="sex">
+         <text>性别:</text>
+            <radio-group name='gender'>
+              <label>
+                  <radio value="男" checked/>男
+              </label>
+                <label>
+                  <radio value="女" />女
+              </label>
+            </radio-group>
+         </view>
+         <!-- skill -->
+         <view class="skill">
+         <text>专业技能</text>
+            <checkbox-group name='skill'>
+             <label>
+               <checkbox value="HTML"  checked></checkbox>HTML
+             </label> 
+              <label>
+               <checkbox value="CSS"></checkbox>CSS
+             </label> 
+              <label>
+               <checkbox value="JS"></checkbox>JAVASCRIPT
+             </label> 
+              <label>
+               <checkbox value="JQ"></checkbox>JQUERY
+             </label> 
+            </checkbox-group>
+         </view>
+   </view>
+      <!-- suggest -->
+    <view class="suggess">
+      <text>你的意见：</text>
+       <textarea auto-focus placeholder="请输入" name='suggess'>
+       </textarea>
+    </view>
+  <!-- btn  -->
+    <view class="btn">
+      <button form-type="submit">提交</button>
+    </view>
+  </form>
+ </view>

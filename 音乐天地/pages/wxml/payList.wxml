@@ -1,0 +1,17 @@
+<scroll-view scroll-y="true"  class="payListScroll">
+  <block wx:for="{{playList}}" wx:key="index">
+   <view class="container_payList" data-index="{{index}}" bindtap="changePlay"> 
+         <view class="singer_pic">
+             <image src="{{item.coverImageUrl}}" mode="aspectFill"></image>
+         </view>
+         <view class="singer_info">
+                  <text>{{item.title}}</text>
+                  <text>{{item.singer}}</text>
+         </view>
+         <view class="current_state">
+                    <text wx:if="{{playIndex==index}}">正在播放</text>
+         </view>  
+  </view> 
+ </block> 
+   
+</scroll-view>

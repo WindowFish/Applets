@@ -1,0 +1,29 @@
+<view class="container">
+    <form bindsubmit="formSumbit">
+    <!-- 姓名 -->
+         <view class="uName">
+              <text>姓名:</text>
+              <input value="{{username}}" type="text" name="name" placeholder="请输入姓名">
+              </input>
+         </view>
+         <!-- 性别 -->
+       <view class="sex">
+          <text>性别:</text>
+          <view class="sexGroup">
+              <radio-group name="radio">
+                 <label>
+                    <radio value="男" checked="{{sex=='男'? 'checked' : ''}}">
+                    </radio>男
+                 </label>
+                 <label>
+                   <radio value="女" checked="{{sex=='女'?'checked' : ''}}"></radio>女
+                 </label>
+              </radio-group>
+          </view>
+       </view>
+        <!-- 提交 -->
+        <button form-type="submit" type="primary" style="width:100%">
+            保存
+        </button>
+    </form>
+</view>
